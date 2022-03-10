@@ -76,6 +76,9 @@
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
+    <Content Include="MenuPrincipal.aspx" />
+    <Content Include="PORTADA-WEBSITE1uv.jpg" />
+    <Content Include="PrincipalPage.css" />
     <Content Include="Web.config" />
     <None Include="Connected Services\WCFRecicladoBotellas\ServicioRecicladoBotellas.wsdl" />
   </ItemGroup>
@@ -84,6 +87,13 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="MenuPrincipal.aspx.cs">
+      <DependentUpon>MenuPrincipal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MenuPrincipal.aspx.designer.cs">
+      <DependentUpon>MenuPrincipal.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
