@@ -76,9 +76,38 @@
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
+    <Content Include="Forms\Login.aspx" />
+    <Content Include="Forms\MenuEstudiante.aspx" />
+    <Content Include="Forms\Servicio de autenticación Netvalle_files\0.png" />
+    <Content Include="Forms\Servicio de autenticación Netvalle_files\1.png" />
+    <Content Include="Forms\Servicio de autenticación Netvalle_files\2.png" />
+    <Content Include="Forms\Servicio de autenticación Netvalle_files\3.png" />
+    <Content Include="Forms\Servicio de autenticación Netvalle_files\4.png" />
+    <Content Include="Forms\Servicio de autenticación Netvalle_files\5.png" />
+    <Content Include="Forms\Servicio de autenticación Netvalle_files\6.png" />
+    <Content Include="Forms\Servicio de autenticación Netvalle_files\7.png" />
+    <Content Include="Forms\Servicio de autenticación Netvalle_files\8.png" />
+    <Content Include="Forms\Servicio de autenticación Netvalle_files\9.png" />
+    <Content Include="Forms\Servicio de autenticación Netvalle_files\BanderaBoliviaDefault.png" />
+    <Content Include="Forms\Servicio de autenticación Netvalle_files\calendar_icon.png" />
+    <Content Include="Forms\Servicio de autenticación Netvalle_files\Center5x5.png" />
+    <Content Include="Forms\Servicio de autenticación Netvalle_files\EstiloRecordarPIN.css" />
+    <Content Include="Forms\Servicio de autenticación Netvalle_files\EstiloRegistrarSolicitud.css" />
+    <Content Include="Forms\Servicio de autenticación Netvalle_files\EstiloSan.css" />
+    <Content Include="Forms\Servicio de autenticación Netvalle_files\gs_noscript_130-65_en.gif" />
+    <Content Include="Forms\Servicio de autenticación Netvalle_files\IniciarSessionPlano130x22.png" />
+    <Content Include="Forms\Servicio de autenticación Netvalle_files\JTecladoNumerico.js" />
+    <Content Include="Forms\Servicio de autenticación Netvalle_files\LetrasSan106x36.png" />
+    <Content Include="Forms\Servicio de autenticación Netvalle_files\Limpiar.png" />
+    <Content Include="Forms\Servicio de autenticación Netvalle_files\LogoSan106x70.png" />
+    <Content Include="Forms\Servicio de autenticación Netvalle_files\LogoUnivalle260x55.png" />
+    <Content Include="Forms\Servicio de autenticación Netvalle_files\PDesbloquearCuenta.html" />
+    <Content Include="Forms\Servicio de autenticación Netvalle_files\PRecordarPIN.html" />
+    <Content Include="Forms\Servicio de autenticación Netvalle_files\PRegistrarSolicitud.html" />
     <Content Include="Images\header_background.png" />
     <Content Include="Images\logo.png" />
     <Content Include="Images\perfil.png" />
+    <Content Include="Styles\SMenu.css" />
     <Content Include="Styles\SPaginaMaestra.css" />
     <Content Include="Web.config" />
     <None Include="Connected Services\WCFRecicladoBotellas\ServicioRecicladoBotellas.wsdl" />
@@ -88,6 +117,20 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MenuEstudiante.aspx.cs">
+      <DependentUpon>MenuEstudiante.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\MenuEstudiante.aspx.designer.cs">
+      <DependentUpon>MenuEstudiante.aspx</DependentUpon>
     </Compile>
     <Compile Include="PaginaMaestra.Master.cs">
       <DependentUpon>PaginaMaestra.Master</DependentUpon>
@@ -102,6 +145,33 @@
     <None Include="Connected Services\WCFRecicladoBotellas\ServicioRecicladoBotellas.xsd">
       <SubType>Designer</SubType>
     </None>
+    <Content Include="Forms\Servicio de autenticación Netvalle_files\enlace.univalle.edu" />
+    <Content Include="Forms\Servicio de autenticación Netvalle_files\gs_flash_130-65_en.js.descarga" />
+    <Content Include="Forms\Servicio de autenticación Netvalle_files\JSRecordarPIN.js.descarga" />
+    <Content Include="Forms\Servicio de autenticación Netvalle_files\JSSolicitarUsuario.js.descarga" />
+    <Content Include="Forms\Servicio de autenticación Netvalle_files\ScriptResource%281%29.axd" />
+    <Content Include="Forms\Servicio de autenticación Netvalle_files\ScriptResource%2810%29.axd" />
+    <Content Include="Forms\Servicio de autenticación Netvalle_files\ScriptResource%2811%29.axd" />
+    <Content Include="Forms\Servicio de autenticación Netvalle_files\ScriptResource%2812%29.axd" />
+    <Content Include="Forms\Servicio de autenticación Netvalle_files\ScriptResource%2813%29.axd" />
+    <Content Include="Forms\Servicio de autenticación Netvalle_files\ScriptResource%2814%29.axd" />
+    <Content Include="Forms\Servicio de autenticación Netvalle_files\ScriptResource%2815%29.axd" />
+    <Content Include="Forms\Servicio de autenticación Netvalle_files\ScriptResource%2816%29.axd" />
+    <Content Include="Forms\Servicio de autenticación Netvalle_files\ScriptResource%2817%29.axd" />
+    <Content Include="Forms\Servicio de autenticación Netvalle_files\ScriptResource%2818%29.axd" />
+    <Content Include="Forms\Servicio de autenticación Netvalle_files\ScriptResource%2819%29.axd" />
+    <Content Include="Forms\Servicio de autenticación Netvalle_files\ScriptResource%282%29.axd" />
+    <Content Include="Forms\Servicio de autenticación Netvalle_files\ScriptResource%2820%29.axd" />
+    <Content Include="Forms\Servicio de autenticación Netvalle_files\ScriptResource%283%29.axd" />
+    <Content Include="Forms\Servicio de autenticación Netvalle_files\ScriptResource%284%29.axd" />
+    <Content Include="Forms\Servicio de autenticación Netvalle_files\ScriptResource%285%29.axd" />
+    <Content Include="Forms\Servicio de autenticación Netvalle_files\ScriptResource%286%29.axd" />
+    <Content Include="Forms\Servicio de autenticación Netvalle_files\ScriptResource%287%29.axd" />
+    <Content Include="Forms\Servicio de autenticación Netvalle_files\ScriptResource%288%29.axd" />
+    <Content Include="Forms\Servicio de autenticación Netvalle_files\ScriptResource%289%29.axd" />
+    <Content Include="Forms\Servicio de autenticación Netvalle_files\ScriptResource.axd" />
+    <Content Include="Forms\Servicio de autenticación Netvalle_files\WebResource%281%29.axd" />
+    <Content Include="Forms\Servicio de autenticación Netvalle_files\WebResource.axd" />
     <None Include="packages.config" />
     <Content Include="PaginaMaestra.Master" />
     <None Include="Web.Debug.config">
@@ -117,9 +187,7 @@
   <ItemGroup>
     <WCFMetadataStorage Include="Connected Services\WCFRecicladoBotellas\" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Forms\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
