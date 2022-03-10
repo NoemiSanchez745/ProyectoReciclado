@@ -1,0 +1,7 @@
+C:\Users\Fernanda\source\repos\ProyectoRecicladoBotellas\WCFServicioRecicladoBotellas\bin\WCFServicioRecicladoBotellas.dll.config
+C:\Users\Fernanda\source\repos\ProyectoRecicladoBotellas\WCFServicioRecicladoBotellas\bin\WCFServicioRecicladoBotellas.dll
+C:\Users\Fernanda\source\repos\ProyectoRecicladoBotellas\WCFServicioRecicladoBotellas\bin\WCFServicioRecicladoBotellas.pdb
+C:\Users\Fernanda\source\repos\ProyectoRecicladoBotellas\WCFServicioRecicladoBotellas\obj\Debug\WCFServicioRecicladoBotellas.csproj.AssemblyReference.cache
+C:\Users\Fernanda\source\repos\ProyectoRecicladoBotellas\WCFServicioRecicladoBotellas\obj\Debug\WCFServicioRecicladoBotellas.csproj.CoreCompileInputs.cache
+C:\Users\Fernanda\source\repos\ProyectoRecicladoBotellas\WCFServicioRecicladoBotellas\obj\Debug\WCFServicioRecicladoBotellas.dll
+C:\Users\Fernanda\source\repos\ProyectoRecicladoBotellas\WCFServicioRecicladoBotellas\obj\Debug\WCFServicioRecicladoBotellas.pdb
