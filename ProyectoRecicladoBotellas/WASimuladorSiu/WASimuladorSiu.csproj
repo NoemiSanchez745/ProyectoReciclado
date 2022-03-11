@@ -76,6 +76,9 @@
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
+    <Content Include="Estilos\main.css" />
+    <Content Include="img\Head.PNG" />
+    <Content Include="PáginaMostrarGramos.aspx" />
     <Content Include="Web.config" />
     <None Include="Connected Services\WCFRecicladoBotellas\ServicioRecicladoBotellas.wsdl" />
   </ItemGroup>
@@ -86,6 +89,13 @@
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PáginaMostrarGramos.aspx.cs">
+      <DependentUpon>PáginaMostrarGramos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PáginaMostrarGramos.aspx.designer.cs">
+      <DependentUpon>PáginaMostrarGramos.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="Connected Services\WCFRecicladoBotellas\ServicioRecicladoBotellas.xsd">
