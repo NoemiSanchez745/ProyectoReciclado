@@ -76,6 +76,7 @@
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
+    <Content Include="Forms\ListadoGramos.aspx" />
     <Content Include="Forms\Login.aspx" />
     <Content Include="Forms\MenuEstudiante.aspx" />
     <Content Include="Forms\MenuPrincipal.aspx" />
@@ -105,10 +106,13 @@
     <Content Include="Forms\Servicio de autenticación Netvalle_files\PDesbloquearCuenta.html" />
     <Content Include="Forms\Servicio de autenticación Netvalle_files\PRecordarPIN.html" />
     <Content Include="Forms\Servicio de autenticación Netvalle_files\PRegistrarSolicitud.html" />
+    <Content Include="Images\footer_background.png" />
+    <Content Include="Images\footer_image_left.png" />
     <Content Include="Images\header_background.png" />
     <Content Include="Images\logo.png" />
     <Content Include="Images\perfil.png" />
     <Content Include="Images\PORTADA-WEBSITE1uv.jpg" />
+    <Content Include="Styles\SListadoGramos.css" />
     <Content Include="Styles\SMenu.css" />
     <Content Include="Styles\SPaginaMaestra.css" />
     <Content Include="Styles\SPrincipalPage.css" />
@@ -120,6 +124,13 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ListadoGramos.aspx.cs">
+      <DependentUpon>ListadoGramos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\ListadoGramos.aspx.designer.cs">
+      <DependentUpon>ListadoGramos.aspx</DependentUpon>
     </Compile>
     <Compile Include="Forms\Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
@@ -141,6 +152,13 @@
     </Compile>
     <Compile Include="Forms\MenuPrincipal.aspx.designer.cs">
       <DependentUpon>MenuPrincipal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPage.Master.cs">
+      <DependentUpon>MasterPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPage.Master.designer.cs">
+      <DependentUpon>MasterPage.Master</DependentUpon>
     </Compile>
     <Compile Include="PaginaMaestra.Master.cs">
       <DependentUpon>PaginaMaestra.Master</DependentUpon>
@@ -182,6 +200,7 @@
     <Content Include="Forms\Servicio de autenticación Netvalle_files\ScriptResource.axd" />
     <Content Include="Forms\Servicio de autenticación Netvalle_files\WebResource%281%29.axd" />
     <Content Include="Forms\Servicio de autenticación Netvalle_files\WebResource.axd" />
+    <Content Include="MasterPage.Master" />
     <None Include="packages.config" />
     <Content Include="PaginaMaestra.Master" />
     <None Include="Web.Debug.config">
@@ -197,7 +216,12 @@
   <ItemGroup>
     <WCFMetadataStorage Include="Connected Services\WCFRecicladoBotellas\" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\WCFServicioRecicladoBotellas\WCFServicioRecicladoBotellas.csproj">
+      <Project>{B0ACE1FE-9F5B-4956-AECF-579869EC4A31}</Project>
+      <Name>WCFServicioRecicladoBotellas</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

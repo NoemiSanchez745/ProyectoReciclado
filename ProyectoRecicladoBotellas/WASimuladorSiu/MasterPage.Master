@@ -1,0 +1,119 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="WASimuladorSiu.MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="Styles/SPaginaMaestra.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="wrapper">
+        <div id="main_container">
+            <div id="header">
+                <div id="logo">
+                    <a href="#">
+                        <asp:Image ID="Image1" runat="server" ImageUrl="~/Images/logo.png" />
+                    </a>
+                </div>
+                <div id="closeSession">
+                    <ul>
+                        <li>
+                            <a>Cerrar Sesíon</a>
+                        </li>
+                    </ul>
+                </div>
+                <table class="info_Usuario">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <table border="0" cellpadding="0" cellspacing="0" style="width: 800px">
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <table style="width: 100%">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td width="35%">
+                                                                <span id="LBLNombreUsuario" class="LabelSesion" style="font-weight: normal; margin-left: 17px;">JUAN PEREZ</span>
+                                                            </td>
+                                                            <td width="45%" align="left">
+                                                                <span id="LBLFecha" class="LabelSesion" style="font-weight: normal; margin-right: 5px; margin-left: 5px">Cochabamba, viernes 11 de marzo de 2022</span>
+                                                                <span id="LBLHora" class="LabelSesion" style="font-weight: normal;">0:00 p.m.</span>
+                                                            </td>
+                                                            <td width="20%" align="right">
+                                                                <a id="LKBManual" class="LabelInicio" style="padding-right: 3px">Manual de Usuario</a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td colspan="3" style="width: 100%">
+                                                                <table style="width: 100%">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td style="width: 50%; text-align: left">
+                                                                                <span id="LBLCarrera" class="LabelSesion" style="padding-left: 15px">ING. DE SISTEMAS INFORMATICOS</span>
+                                                                            </td>
+                                                                            <td style="width: 50%; text-align: right">
+                                                                                <span id="LBLSedeAcademica" class="LabelSesion" style="padding-left: 15px">SEDE ACADÉMICA COCHABAMBA</span>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="center_content">
+            <table style="width: 750px; text-align: center">
+                <tbody>
+                    <tr>
+                        <td>
+                            <ul class="mainmenu">
+                                <li id="ContentPlaceHolder1_liSiu">
+                                    <a id="ContentPlaceHolder1_LKBSiu" title="Gestiona tu información personal" style="display: inline-block; font-size: 13px; height: 50px; width: 440px; margin: 0 5px 0 0;"><b style="font-size: 35px">R</b>ECICLADO</a>
+                                </li>
+                                <li id="ContentPlaceHolder1_liTips">
+                                    <a id="ContentPlaceHolder1_LKBTips" title="Tips para tomar en cuenta" style="display: inline-block; font-size: 13px; height: 50px; width: 100px; margin: 0 5px 0 0;"><b style="font-size: 35px"></a>
+                                </li>
+                                <li id="ContentPlaceHolder1_li1">
+                                    <a id="ContentPlaceHolder1_LKBPerfil" title="Revisa tu perfil de usuario" style="display: inline-block; font-size: 13px; height: 50px; width: 110px; padding-left: 15px; padding-right: 15px">
+                                        <asp:Image ID="Image2" runat="server" Style="height: 35px; width: 35px; border: 0 none; margin-top: 5px" ImageUrl="~/Images/perfil.png" />
+                                    </a>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="caja">
+                <form id="form1" runat="server">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer_image_left">
+        </div>
+        <h5 class="home_footer" dir="ltr">
+            <span id="LBLAnio">2021</span> Netvalle - Universidad Privada del Valle - Bolivia
+        </h5>
+        <div class="footer_image_right">
+        </div>
+    </div>
+</body>
+</html>

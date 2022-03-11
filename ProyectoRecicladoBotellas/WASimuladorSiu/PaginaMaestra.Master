@@ -23,7 +23,7 @@
                     <div id="closeSession">
                         <ul>
                             <li>
-                                <a href="../../WebFormsExtranjero/Login/ILogin.aspx">Cerrar Sesíon</a>
+                                <a>Cerrar Sesíon</a>
                             </li>
                         </ul>
                     </div>
@@ -42,7 +42,7 @@
                                                                     <span id="LBLNombreUsuario" class="LabelSesion" style="font-weight: normal; margin-left: 17px;">JUAN PEREZ</span>
                                                                 </td>
                                                                 <td width="45%" align="left">
-                                                                    <span id="LBLFecha" class="LabelSesion" style="font-weight: normal; margin-right: 5px; margin-left: 5px">Cochabamba, domingo 30 de mayo de 2021</span>
+                                                                    <span id="LBLFecha" class="LabelSesion" style="font-weight: normal; margin-right: 5px; margin-left: 5px">Cochabamba, viernes 11 de marzo de 2022</span>
                                                                     <span id="LBLHora" class="LabelSesion" style="font-weight: normal;">0:00 p.m.</span>
                                                                 </td>
                                                                 <td width="20%" align="right">
@@ -110,8 +110,10 @@
                     </tbody>
                 </table>
                 <div class="caja">
-                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-                    </asp:ContentPlaceHolder>
+                    <form id="form1" runat="server">
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </form>
                 </div>
             </div>
         </div>

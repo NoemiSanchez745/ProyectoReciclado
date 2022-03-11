@@ -21,7 +21,7 @@
                                             <table cellpadding="0" cellspacing="0" style="border-width: 0;" runat="server">
                                                 <tr class="LBLContenido">
                                                     <td class="LBLContenido">
-                                                        <a href="#" class="Opcion">
+                                                        <a href="ListadoGramos.aspx" class="Opcion">
                                                             Reciclado Botellas                                                  
                                                             <h8 id="notificacionP" runat="server">
                                                                 <b>

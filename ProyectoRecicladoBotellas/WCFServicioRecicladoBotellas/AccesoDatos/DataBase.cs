@@ -9,7 +9,7 @@ namespace WCFServicioRecicladoBotellas.AccesoDatos
 {
     public class DataBase
     {
-        static string connectionString = @"data source = DESKTOP-DIHA8J0\SQLEXPRESS; initial catalog = Recycling; Integrated Security = True";
+        static string connectionString = @"data source = DESKTOP-HVTTRAL; initial catalog = Recycling; Integrated Security = True";
 
         public static SqlCommand CreateBasicCommand()
         {

@@ -7,56 +7,65 @@
 // </generado automáticamente>
 //------------------------------------------------------------------------------
 
-namespace WASimuladorSiu
+namespace WASimuladorSiu.Forms
 {
 
 
-    public partial class PaginaMaestra
+    public partial class ListadoGramos
     {
 
         /// <summary>
-        /// Control head.
+        /// Control txtBusquedaFecha.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder head;
+        protected global::System.Web.UI.WebControls.TextBox txtBusquedaFecha;
 
         /// <summary>
-        /// Control Image1.
+        /// Control txtBusquedaHora.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image Image1;
+        protected global::System.Web.UI.WebControls.TextBox txtBusquedaHora;
 
         /// <summary>
-        /// Control Image2.
+        /// Control gvListaGramos.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image Image2;
+        protected global::System.Web.UI.WebControls.GridView gvListaGramos;
 
         /// <summary>
-        /// Control form1.
+        /// Control lbNombre.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
+        protected global::System.Web.UI.WebControls.Label lbNombre;
 
         /// <summary>
-        /// Control ContentPlaceHolder1.
+        /// Control lbCodigo.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder ContentPlaceHolder1;
+        protected global::System.Web.UI.WebControls.Label lbCodigo;
+
+        /// <summary>
+        /// Control lbGramos.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lbGramos;
     }
 }

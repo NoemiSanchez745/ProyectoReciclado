@@ -11,7 +11,7 @@ namespace WASimuladorSiu
 {
 
 
-    public partial class PaginaMaestra
+    public partial class MasterPage
     {
 
         /// <summary>
