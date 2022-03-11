@@ -4,11 +4,13 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using WCFServicioRecicladoBotellas;
 
 namespace WASimuladorSiu.Forms
 {
     public partial class Login : System.Web.UI.Page
     {
+        ServicioRecicladoBotellas servicioRecicladoBotellas;
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack)
@@ -21,7 +23,9 @@ namespace WASimuladorSiu.Forms
         {
             if (txtCuenta.Text.Trim() != "")
             {
-                Session["Usuario"] = txtCuenta.Text.Trim();
+                servicioRecicladoBotellas = new ServicioRecicladoBotellas();
+                                
+                Session["UsuarioID"] = servicioRecicladoBotellas.GetUserID(txtCuenta.Text.Trim().ToLower());
                 Response.Redirect("../Forms/MenuEstudiante.aspx");
             }
         }

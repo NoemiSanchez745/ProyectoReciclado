@@ -57,3 +57,6 @@ C:\Users\Fernanda\Desktop\Nueva carpeta\ProyectoReciclado\ProyectoRecicladoBotel
 C:\Users\Fernanda\Desktop\Nueva carpeta\ProyectoReciclado\ProyectoRecicladoBotellas\WASimuladorSiu\obj\Debug\WASimuladorSiu.csproj.CopyComplete
 C:\Users\Fernanda\Desktop\Nueva carpeta\ProyectoReciclado\ProyectoRecicladoBotellas\WASimuladorSiu\obj\Debug\WASimuladorSiu.dll
 C:\Users\Fernanda\Desktop\Nueva carpeta\ProyectoReciclado\ProyectoRecicladoBotellas\WASimuladorSiu\obj\Debug\WASimuladorSiu.pdb
+C:\Users\Fernanda\Desktop\Nueva carpeta\ProyectoReciclado\ProyectoRecicladoBotellas\WASimuladorSiu\bin\WCFServicioRecicladoBotellas.dll
+C:\Users\Fernanda\Desktop\Nueva carpeta\ProyectoReciclado\ProyectoRecicladoBotellas\WASimuladorSiu\bin\WCFServicioRecicladoBotellas.pdb
+C:\Users\Fernanda\Desktop\Nueva carpeta\ProyectoReciclado\ProyectoRecicladoBotellas\WASimuladorSiu\bin\WCFServicioRecicladoBotellas.dll.config

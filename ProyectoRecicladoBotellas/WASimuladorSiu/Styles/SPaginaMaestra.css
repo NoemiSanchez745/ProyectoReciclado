@@ -144,7 +144,7 @@
     height: 40px;
     width: 840px;
     margin: -40px auto 0;
-    background: url(../Images/MPImage/footer_background.png) repeat-x center;
+    background: url(../Images/footer_background.png) repeat-x center;
     font-family: "BBAlpha Sans", "Prelude Medium", "S60 Sans", Tahoma, Verdana, Arial, "Sans-Serif";
 }
 
@@ -166,7 +166,7 @@ h5.home_footer {
     float: left;
     width: 140px;
     height: 40px;
-    background: url(../Images/MPImage/footer_image_left.png) no-repeat center;
+    background: url(../Images/footer_image_left.png) no-repeat center;
 }
 
 .footer_image_right {

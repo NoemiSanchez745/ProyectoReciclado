@@ -75,6 +75,35 @@ namespace WCFServicioRecicladoBotellas
             }
             return u;
         }
+
+        public int GetUserID(string codigo)
+        {
+            int id = 0;
+            string query = @"SELECT UsuarioID
+                             FROM Usuario WHERE Codigo=@Codigo";
+            SqlDataReader dr = null;
+            SqlCommand cmd = null;
+            try
+            {
+                cmd = DataBase.CreateBasicCommand(query);
+                cmd.Parameters.AddWithValue("@Codigo", codigo);
+                dr = DataBase.ExecuteDataReaderCommand(cmd);
+                while (dr.Read())
+                {
+                    id = int.Parse(dr[0].ToString());
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                cmd.Connection.Close();
+                dr.Close();
+            }
+            return id;
+        }
         #endregion
     }
 }

@@ -21,6 +21,7 @@ namespace WCFServicioRecicladoBotellas
 
         #region Usuario
         Usuario SelectUsuario(int UsuarioID);
+        int GetUserID(string codigo);
         #endregion
 
     }
