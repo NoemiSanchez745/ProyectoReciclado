@@ -4,6 +4,7 @@ using System.Linq;
 using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.Text;
+using WCFServicioRecicladoBotellas.Entidades;
 
 namespace WCFServicioRecicladoBotellas
 {
@@ -13,5 +14,14 @@ namespace WCFServicioRecicladoBotellas
     {
         [OperationContract]
         void DoWork();
+
+        #region Contenedor
+        List<Contenedor> SelectContenedor(int UsuarioID);
+        #endregion
+
+        #region Usuario
+        Usuario SelectUsuario(int UsuarioID);
+        #endregion
+
     }
 }
