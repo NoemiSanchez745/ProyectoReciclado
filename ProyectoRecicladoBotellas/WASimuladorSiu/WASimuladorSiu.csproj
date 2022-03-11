@@ -78,6 +78,7 @@
     </None>
     <Content Include="Forms\Login.aspx" />
     <Content Include="Forms\MenuEstudiante.aspx" />
+    <Content Include="Forms\MenuPrincipal.aspx" />
     <Content Include="Forms\Servicio de autenticación Netvalle_files\0.png" />
     <Content Include="Forms\Servicio de autenticación Netvalle_files\1.png" />
     <Content Include="Forms\Servicio de autenticación Netvalle_files\2.png" />
@@ -107,8 +108,10 @@
     <Content Include="Images\header_background.png" />
     <Content Include="Images\logo.png" />
     <Content Include="Images\perfil.png" />
+    <Content Include="Images\PORTADA-WEBSITE1uv.jpg" />
     <Content Include="Styles\SMenu.css" />
     <Content Include="Styles\SPaginaMaestra.css" />
+    <Content Include="Styles\SPrincipalPage.css" />
     <Content Include="Web.config" />
     <None Include="Connected Services\WCFRecicladoBotellas\ServicioRecicladoBotellas.wsdl" />
   </ItemGroup>
@@ -131,6 +134,13 @@
     </Compile>
     <Compile Include="Forms\MenuEstudiante.aspx.designer.cs">
       <DependentUpon>MenuEstudiante.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MenuPrincipal.aspx.cs">
+      <DependentUpon>MenuPrincipal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\MenuPrincipal.aspx.designer.cs">
+      <DependentUpon>MenuPrincipal.aspx</DependentUpon>
     </Compile>
     <Compile Include="PaginaMaestra.Master.cs">
       <DependentUpon>PaginaMaestra.Master</DependentUpon>
