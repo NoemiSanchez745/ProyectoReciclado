@@ -13,6 +13,7 @@ namespace WCFServicioRecicladoBotellas
     {
         public void DoWork()
         {
+            
         }
     }
 }
