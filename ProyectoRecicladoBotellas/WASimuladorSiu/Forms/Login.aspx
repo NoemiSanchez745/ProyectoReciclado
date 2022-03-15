@@ -143,6 +143,7 @@
                                                                     <td align="left" class="auto-style1">
                                                                         <br>
                                                                         <asp:TextBox runat="server" MaxLength="15" ID="txtCuenta" class="TextBox" onkeydown="return DisableCtrlKey(event)" onpaste="return false;" oncopy="return false;" Style="width: 88%;"></asp:TextBox>
+                                                                        <asp:RequiredFieldValidator Display="Dynamic" ErrorMessage="(*)" ControlToValidate="txtCuenta" runat="server" ForeColor="White" />
                                                                     </td>
                                                                 </tr>
                                                                 <tr>

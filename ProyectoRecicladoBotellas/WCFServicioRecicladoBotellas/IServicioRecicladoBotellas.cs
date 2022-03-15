@@ -13,14 +13,13 @@ namespace WCFServicioRecicladoBotellas
     public interface IServicioRecicladoBotellas
     {
         [OperationContract]
-        void DoWork();
 
         #region Contenedor
-        List<Contenedor> SelectContenedor(int UsuarioID);
+        List<Contenedor> SelectContenedor(string codigo);
         #endregion
 
         #region Usuario
-        Usuario SelectUsuario(int UsuarioID);
+        Usuario SelectUsuario(string codigo);
         #endregion
 
     }

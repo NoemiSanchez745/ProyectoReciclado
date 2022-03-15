@@ -19,11 +19,10 @@
         </table>
         <asp:GridView ID="gvListaGramos" CssClass="gridview" runat="server" CellPadding="10" ShowHeaderWhenEmpty="True" AutoGenerateColumns="False">
             <Columns>
-                <asp:BoundField DataField="ContenedorID" />
+                <asp:BoundField DataField="Codigo" />
                 <asp:BoundField DataField="Gramos" HeaderText="GRAMOS" />
                 <asp:BoundField DataField="Fecha" HeaderText="FECHA" DataFormatString="{0:d}" />
                 <asp:BoundField DataField="Hora" HeaderText="HORA" DataFormatString="{0:HH:mm}" />
-                <asp:BoundField DataField="UsuarioID" />
             </Columns>
         </asp:GridView>
         <table class="formulario">

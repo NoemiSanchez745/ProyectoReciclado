@@ -11,31 +11,44 @@ namespace WASimuladorSiu.Forms
 {
     public partial class ListadoGramos : System.Web.UI.Page
     {
+        ServicioRecicladoBotellas servicioRecicladoBotellas;
+        string codigo = string.Empty;
+        double totalGramos = 0;
+
         protected void Page_Load(object sender, EventArgs e)
         {
-            ServicioRecicladoBotellas servicioRecicladoBotellas = new ServicioRecicladoBotellas();
-            double totalGramos = 0;
+            servicioRecicladoBotellas = new ServicioRecicladoBotellas();
 
-            if (!this.IsPostBack)
+            if (!IsPostBack)
             {
-                Usuario usuario = servicioRecicladoBotellas.SelectUsuario(2);
-                lbNombre.Text = usuario.Nombres + " " + usuario.Apellidos;
-                lbCodigo.Text = usuario.Codigo;
-
-                gvListaGramos.DataSource = null;
-                gvListaGramos.DataSource = servicioRecicladoBotellas.SelectContenedor(2);
-                gvListaGramos.DataBind();
-                gvListaGramos.HeaderRow.TableSection = TableRowSection.TableHeader;
-
-                gvListaGramos.Columns[0].Visible = false;
-                gvListaGramos.Columns[4].Visible = false;
-
-                foreach (GridViewRow item in gvListaGramos.Rows)
+                if (Session["Usuario"] != null)
                 {
-                    totalGramos = totalGramos + double.Parse(item.Cells[1].Text);
-                }
+                    codigo = Session["Usuario"].ToString();
+                    Usuario usuario = servicioRecicladoBotellas.SelectUsuario(codigo);
+                    if(usuario != null)
+                    {
+                        lbNombre.Text = usuario.Nombres + " " + usuario.Apellidos;
+                        lbCodigo.Text = usuario.Codigo;
 
-                lbGramos.Text = totalGramos + " gramos";
+                        gvListaGramos.DataSource = null;
+                        gvListaGramos.DataSource = servicioRecicladoBotellas.SelectContenedor(codigo);
+                        gvListaGramos.DataBind();
+                        gvListaGramos.HeaderRow.TableSection = TableRowSection.TableHeader;
+
+                        gvListaGramos.Columns[0].Visible = false;
+
+                        foreach (GridViewRow item in gvListaGramos.Rows)
+                        {
+                            totalGramos = totalGramos + double.Parse(item.Cells[1].Text);
+                        }
+
+                        lbGramos.Text = totalGramos + " gramos";
+                    }
+                }
+                else
+                {
+                    Response.Redirect("Login.aspx");
+                }
             }
         }
     }
