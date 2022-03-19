@@ -10,6 +10,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WASimuladorSiu", "WASimulad
 		{B0ACE1FE-9F5B-4956-AECF-579869EC4A31} = {B0ACE1FE-9F5B-4956-AECF-579869EC4A31}
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFSimuladorMaquina", "WPFSimuladorMaquina\WPFSimuladorMaquina.csproj", "{081A0ABA-BF3D-4DF8-ABA8-982E15C969A1}"
+	ProjectSection(ProjectDependencies) = postProject
+		{B0ACE1FE-9F5B-4956-AECF-579869EC4A31} = {B0ACE1FE-9F5B-4956-AECF-579869EC4A31}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,6 +29,10 @@ Global
 		{D39A395A-07BD-4032-B139-4128E5ACF50E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D39A395A-07BD-4032-B139-4128E5ACF50E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D39A395A-07BD-4032-B139-4128E5ACF50E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{081A0ABA-BF3D-4DF8-ABA8-982E15C969A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{081A0ABA-BF3D-4DF8-ABA8-982E15C969A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{081A0ABA-BF3D-4DF8-ABA8-982E15C969A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{081A0ABA-BF3D-4DF8-ABA8-982E15C969A1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

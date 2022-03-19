@@ -51,12 +51,12 @@ C:\Users\Fernanda\Desktop\Nueva carpeta\ProyectoReciclado\ProyectoRecicladoBotel
 C:\Users\Fernanda\Desktop\Nueva carpeta\ProyectoReciclado\ProyectoRecicladoBotellas\WASimuladorSiu\bin\roslyn\VBCSCompiler.exe
 C:\Users\Fernanda\Desktop\Nueva carpeta\ProyectoReciclado\ProyectoRecicladoBotellas\WASimuladorSiu\bin\roslyn\VBCSCompiler.exe.config
 C:\Users\Fernanda\Desktop\Nueva carpeta\ProyectoReciclado\ProyectoRecicladoBotellas\WASimuladorSiu\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Fernanda\Desktop\Nueva carpeta\ProyectoReciclado\ProyectoRecicladoBotellas\WASimuladorSiu\bin\WCFServicioRecicladoBotellas.dll
+C:\Users\Fernanda\Desktop\Nueva carpeta\ProyectoReciclado\ProyectoRecicladoBotellas\WASimuladorSiu\bin\WCFServicioRecicladoBotellas.pdb
+C:\Users\Fernanda\Desktop\Nueva carpeta\ProyectoReciclado\ProyectoRecicladoBotellas\WASimuladorSiu\bin\WCFServicioRecicladoBotellas.dll.config
 C:\Users\Fernanda\Desktop\Nueva carpeta\ProyectoReciclado\ProyectoRecicladoBotellas\WASimuladorSiu\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 C:\Users\Fernanda\Desktop\Nueva carpeta\ProyectoReciclado\ProyectoRecicladoBotellas\WASimuladorSiu\obj\Debug\WASimuladorSiu.csproj.AssemblyReference.cache
 C:\Users\Fernanda\Desktop\Nueva carpeta\ProyectoReciclado\ProyectoRecicladoBotellas\WASimuladorSiu\obj\Debug\WASimuladorSiu.csproj.CoreCompileInputs.cache
 C:\Users\Fernanda\Desktop\Nueva carpeta\ProyectoReciclado\ProyectoRecicladoBotellas\WASimuladorSiu\obj\Debug\WASimuladorSiu.csproj.CopyComplete
 C:\Users\Fernanda\Desktop\Nueva carpeta\ProyectoReciclado\ProyectoRecicladoBotellas\WASimuladorSiu\obj\Debug\WASimuladorSiu.dll
 C:\Users\Fernanda\Desktop\Nueva carpeta\ProyectoReciclado\ProyectoRecicladoBotellas\WASimuladorSiu\obj\Debug\WASimuladorSiu.pdb
-C:\Users\Fernanda\Desktop\Nueva carpeta\ProyectoReciclado\ProyectoRecicladoBotellas\WASimuladorSiu\bin\WCFServicioRecicladoBotellas.dll
-C:\Users\Fernanda\Desktop\Nueva carpeta\ProyectoReciclado\ProyectoRecicladoBotellas\WASimuladorSiu\bin\WCFServicioRecicladoBotellas.pdb
-C:\Users\Fernanda\Desktop\Nueva carpeta\ProyectoReciclado\ProyectoRecicladoBotellas\WASimuladorSiu\bin\WCFServicioRecicladoBotellas.dll.config

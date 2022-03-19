@@ -1,0 +1,15 @@
+C:\Users\Fernanda\Desktop\Nueva carpeta\ProyectoReciclado\ProyectoRecicladoBotellas\WPFSimuladorMaquina\bin\Debug\WPFSimuladorMaquina.exe.config
+C:\Users\Fernanda\Desktop\Nueva carpeta\ProyectoReciclado\ProyectoRecicladoBotellas\WPFSimuladorMaquina\bin\Debug\WPFSimuladorMaquina.exe
+C:\Users\Fernanda\Desktop\Nueva carpeta\ProyectoReciclado\ProyectoRecicladoBotellas\WPFSimuladorMaquina\bin\Debug\WPFSimuladorMaquina.pdb
+C:\Users\Fernanda\Desktop\Nueva carpeta\ProyectoReciclado\ProyectoRecicladoBotellas\WPFSimuladorMaquina\obj\Debug\MainWindow.g.cs
+C:\Users\Fernanda\Desktop\Nueva carpeta\ProyectoReciclado\ProyectoRecicladoBotellas\WPFSimuladorMaquina\obj\Debug\App.g.cs
+C:\Users\Fernanda\Desktop\Nueva carpeta\ProyectoReciclado\ProyectoRecicladoBotellas\WPFSimuladorMaquina\obj\Debug\WPFSimuladorMaquina_MarkupCompile.cache
+C:\Users\Fernanda\Desktop\Nueva carpeta\ProyectoReciclado\ProyectoRecicladoBotellas\WPFSimuladorMaquina\obj\Debug\WPFSimuladorMaquina_MarkupCompile.lref
+C:\Users\Fernanda\Desktop\Nueva carpeta\ProyectoReciclado\ProyectoRecicladoBotellas\WPFSimuladorMaquina\obj\Debug\MainWindow.baml
+C:\Users\Fernanda\Desktop\Nueva carpeta\ProyectoReciclado\ProyectoRecicladoBotellas\WPFSimuladorMaquina\obj\Debug\WPFSimuladorMaquina.g.resources
+C:\Users\Fernanda\Desktop\Nueva carpeta\ProyectoReciclado\ProyectoRecicladoBotellas\WPFSimuladorMaquina\obj\Debug\WPFSimuladorMaquina.Properties.Resources.resources
+C:\Users\Fernanda\Desktop\Nueva carpeta\ProyectoReciclado\ProyectoRecicladoBotellas\WPFSimuladorMaquina\obj\Debug\WPFSimuladorMaquina.csproj.GenerateResource.cache
+C:\Users\Fernanda\Desktop\Nueva carpeta\ProyectoReciclado\ProyectoRecicladoBotellas\WPFSimuladorMaquina\obj\Debug\WPFSimuladorMaquina.csproj.CoreCompileInputs.cache
+C:\Users\Fernanda\Desktop\Nueva carpeta\ProyectoReciclado\ProyectoRecicladoBotellas\WPFSimuladorMaquina\obj\Debug\WPFSimuladorMaquina.exe
+C:\Users\Fernanda\Desktop\Nueva carpeta\ProyectoReciclado\ProyectoRecicladoBotellas\WPFSimuladorMaquina\obj\Debug\WPFSimuladorMaquina.pdb
+C:\Users\Fernanda\Desktop\Nueva carpeta\ProyectoReciclado\ProyectoRecicladoBotellas\WPFSimuladorMaquina\obj\Debug\WPFSimuladorMaquina.csproj.AssemblyReference.cache

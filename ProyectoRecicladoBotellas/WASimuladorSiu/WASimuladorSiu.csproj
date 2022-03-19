@@ -69,6 +69,16 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Connected Services\ServicioRecicladoBotellas\ServicioRecicladoBotellas.wsdl" />
+    <None Include="Connected Services\ServicioRecicladoBotellas\ServicioRecicladoBotellas.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ServicioRecicladoBotellas\ServicioRecicladoBotellas1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ServicioRecicladoBotellas\ServicioRecicladoBotellas2.xsd">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Connected Services\WCFRecicladoBotellas\ServicioRecicladoBotellas.disco" />
     <None Include="Connected Services\WCFRecicladoBotellas\configuration91.svcinfo" />
     <None Include="Connected Services\WCFRecicladoBotellas\configuration.svcinfo" />
@@ -76,11 +86,17 @@
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
+    <None Include="Connected Services\ServicioRecicladoBotellas\ServicioRecicladoBotellas.disco" />
+    <None Include="Connected Services\ServicioRecicladoBotellas\configuration91.svcinfo" />
+    <None Include="Connected Services\ServicioRecicladoBotellas\configuration.svcinfo" />
+    <None Include="Connected Services\ServicioRecicladoBotellas\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
     <Content Include="Forms\ListadoGramos.aspx" />
     <Content Include="Forms\Login.aspx" />
     <Content Include="Forms\MenuEstudiante.aspx" />
     <Content Include="Forms\MenuPrincipal.aspx" />
-    <Content Include="Forms\RecicladoBotellas.aspx" />
     <Content Include="Forms\Servicio de autenticación Netvalle_files\0.png" />
     <Content Include="Forms\Servicio de autenticación Netvalle_files\1.png" />
     <Content Include="Forms\Servicio de autenticación Netvalle_files\2.png" />
@@ -121,6 +137,11 @@
     <None Include="Connected Services\WCFRecicladoBotellas\ServicioRecicladoBotellas.wsdl" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Connected Services\ServicioRecicladoBotellas\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
     <Compile Include="Connected Services\WCFRecicladoBotellas\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -153,13 +174,6 @@
     </Compile>
     <Compile Include="Forms\MenuPrincipal.aspx.designer.cs">
       <DependentUpon>MenuPrincipal.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\RecicladoBotellas.aspx.cs">
-      <DependentUpon>RecicladoBotellas.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Forms\RecicladoBotellas.aspx.designer.cs">
-      <DependentUpon>RecicladoBotellas.aspx</DependentUpon>
     </Compile>
     <Compile Include="PaginaMaestra.Master.cs">
       <DependentUpon>PaginaMaestra.Master</DependentUpon>
@@ -208,9 +222,17 @@
     <Content Include="Forms\Servicio de autenticación Netvalle_files\ScriptResource.axd" />
     <Content Include="Forms\Servicio de autenticación Netvalle_files\WebResource%281%29.axd" />
     <Content Include="Forms\Servicio de autenticación Netvalle_files\WebResource.axd" />
+    <None Include="Connected Services\WCFRecicladoBotellas\ServicioRecicladoBotellas1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\WCFRecicladoBotellas\ServicioRecicladoBotellas11.xsd">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="packages.config" />
     <Content Include="PaginaMaestra.Master" />
     <Content Include="PMRecicladoBotellas.Master" />
+    <Content Include="Properties\DataSources\WCFServicioRecicladoBotellas.Entidades.Contenedor.datasource" />
+    <Content Include="Properties\DataSources\WCFServicioRecicladoBotellas.Entidades.Usuario.datasource" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -222,6 +244,7 @@
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup>
+    <WCFMetadataStorage Include="Connected Services\ServicioRecicladoBotellas\" />
     <WCFMetadataStorage Include="Connected Services\WCFRecicladoBotellas\" />
   </ItemGroup>
   <ItemGroup>

@@ -1,19 +1,20 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.Serialization;
 using System.Web;
 
 namespace WCFServicioRecicladoBotellas.Entidades
 {
+    [DataContract]
     public class Usuario
     {
         #region Propiedades
-        public int UsuarioID { get; set; }
-
+        [DataMember]
         public string Codigo { get; set; }
-
+        [DataMember]
         public string Nombres { get; set; }
-
+        [DataMember]
         public string Apellidos { get; set; }
         #endregion
 
@@ -25,9 +26,8 @@ namespace WCFServicioRecicladoBotellas.Entidades
         /// <param name="Codigo"></param>
         /// <param name="Nombres"></param>
         /// <param name="Apellidos"></param>
-        public Usuario(int UsuarioID, string Codigo, string Nombres, string Apellidos)
+        public Usuario(string Codigo, string Nombres, string Apellidos)
         {
-            this.UsuarioID = UsuarioID;
             this.Codigo = Codigo;
             this.Nombres = Nombres;
             this.Apellidos = Apellidos;

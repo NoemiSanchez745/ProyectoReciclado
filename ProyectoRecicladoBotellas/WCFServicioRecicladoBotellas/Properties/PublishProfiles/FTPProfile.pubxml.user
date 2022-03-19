@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Este archivo se usa en el proceso de publicación y empaquetado del proyecto web. Para personalizar el comportamiento de este proceso,
+edite el archivo MSBuild. Visite https://go.microsoft.com/fwlink/?LinkID=208121 para obtener más información. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAK1PUfXr/6UGcvWhI2S76mAAAAAACAAAAAAAQZgAAAAEAACAAAAAQ+sDoXiOLSknu2PwQlqbJqXv/GH80RU79QOv7hnR/qwAAAAAOgAAAAAIAACAAAAAPg8AH0c8BtWXXMhUDNyxoffTy1fs+rZ6isWsyaa1DxyAAAAB5QZbcEMEZZ73CRr3jcoJofaT0hJHo/Fu5ld9bl6wSD0AAAAC3GQLd9gjUvti1zbGVFNE7Dr4iLqNWmftwF6gsNc4v8w8GRgKoK45LBCnJDQ0upMA+r9E+P7rF9kB8hIucQYH1</EncryptedPassword>
+    <_PublishTargetUrl>ftp://RecicladoUnivalle.somee.com/www.RecicladoUnivalle.somee.com</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/WCFServicioRecicladoBotellas.dll">
+      <publishTime>03/15/2022 16:09:20</publishTime>
+    </File>
+    <File Include="bin/WCFServicioRecicladoBotellas.pdb">
+      <publishTime>03/15/2022 16:09:20</publishTime>
+    </File>
+    <File Include="ServicioRecicladoBotellas.svc">
+      <publishTime>03/09/2022 22:00:11</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>03/15/2022 14:12:36</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

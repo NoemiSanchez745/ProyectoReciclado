@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="d8b7b5ba-7e14-43a3-9d36-aa0053b02538" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://www.RecicladoUnivalle.somee.com/ServicioRecicladoBotellas.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ServicioRecicladoBotellas.disco" MetadataType="Disco" ID="2264a208-33d3-4921-8d30-2ef88e49af42" SourceId="1" SourceUrl="http://www.recicladounivalle.somee.com/ServicioRecicladoBotellas.svc?disco" />
+    <MetadataFile FileName="ServicioRecicladoBotellas.xsd" MetadataType="Schema" ID="5d3416b0-7cd4-4a3e-98bc-49cbd9867a3e" SourceId="1" SourceUrl="http://www.recicladounivalle.somee.com/ServicioRecicladoBotellas.svc?xsd=xsd0" />
+    <MetadataFile FileName="ServicioRecicladoBotellas1.xsd" MetadataType="Schema" ID="77ca912d-8c25-428c-8d82-ab5029957f65" SourceId="1" SourceUrl="http://www.recicladounivalle.somee.com/ServicioRecicladoBotellas.svc?xsd=xsd1" />
+    <MetadataFile FileName="ServicioRecicladoBotellas.wsdl" MetadataType="Wsdl" ID="ee320262-5f94-447e-ab82-f0ab38af5d03" SourceId="1" SourceUrl="http://www.recicladounivalle.somee.com/ServicioRecicladoBotellas.svc?wsdl" />
+    <MetadataFile FileName="ServicioRecicladoBotellas2.xsd" MetadataType="Schema" ID="c720cf5e-94a8-4ecb-8938-4a0a176e330e" SourceId="1" SourceUrl="http://www.recicladounivalle.somee.com/ServicioRecicladoBotellas.svc?xsd=xsd2" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

@@ -9,7 +9,7 @@ namespace WCFServicioRecicladoBotellas.AccesoDatos
 {
     public class DataBase
     {
-        static string connectionString = @"data source = DESKTOP-DIHA8J0\SQLEXPRESS; initial catalog = Recycling; Integrated Security = True";
+        static string connectionString = @"Data Source=BDRecicladoBotellas.mssql.somee.com;Initial Catalog=BDRecicladoBotellas;Persist Security Info=True;User ID=reciclado2020_SQLLogin_1;Password=yx5bpdm7l5";
 
         public static SqlCommand CreateBasicCommand()
         {
@@ -25,7 +25,44 @@ namespace WCFServicioRecicladoBotellas.AccesoDatos
             SqlCommand command = new SqlCommand(query);
             command.Connection = connection;
             return command;
-        }            
+        }
+
+        public static List<SqlCommand> CreateNBasicCommand(int n)
+        {
+            List<SqlCommand> res = new List<SqlCommand>();
+            SqlConnection connection = new SqlConnection(connectionString);
+            for (int i = 1; i <= n; i++)
+            {
+                SqlCommand command = new SqlCommand();
+                command.Connection = connection;
+                res.Add(command);
+            }
+
+            return res;
+        }
+
+        public static string GetGenerateIDTable(string tableName)
+        {
+            string res = "";
+            string query = "SELECT IDENT_CURRENT('"+tableName+"') + IDENT_INCR('"+tableName+"')";
+            SqlCommand command = CreateBasicCommand(query);
+
+            try
+            {
+                command.Connection.Open();
+                res = command.ExecuteScalar().ToString();
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+            finally
+            {
+                command.Connection.Close();
+            }
+            return res;
+        }
 
         /// <summary>
         /// Insert Update Delete
@@ -95,6 +132,32 @@ namespace WCFServicioRecicladoBotellas.AccesoDatos
             }
 
             return dr;
+        }
+
+        public static void ExecuteNBasicCommand(List<SqlCommand> commands)
+        {
+            SqlTransaction transaction = null;
+            SqlCommand command1 = commands[0];
+            try
+            {
+                command1.Connection.Open();
+                transaction = command1.Connection.BeginTransaction();
+                foreach (SqlCommand item in commands)
+                {
+                    item.Transaction = transaction;
+                    item.ExecuteNonQuery();
+                }
+                transaction.Commit();
+            }
+            catch (Exception)
+            {
+                transaction.Rollback();
+                throw;
+            }
+            finally
+            {
+                command1.Connection.Close();
+            }
         }
     }
 }

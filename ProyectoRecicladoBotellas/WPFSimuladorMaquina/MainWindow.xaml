@@ -1,0 +1,22 @@
+﻿<Window x:Class="WPFSimuladorMaquina.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFSimuladorMaquina"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="301.5" Width="369.5">
+    <Grid>
+        <TextBox x:Name="txtCodigo" HorizontalAlignment="Left" Height="22" Margin="105,70,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="btnLeer" Content="LEER" HorizontalAlignment="Left" Margin="230,72,0,0" VerticalAlignment="Top" Width="75" Click="btnLeer_Click"/>
+        <TextBox x:Name="txtGramos" HorizontalAlignment="Left" Height="22" Margin="105,189,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="btnStop" IsEnabled="False" Content="STOP" HorizontalAlignment="Left" Margin="230,191,0,0" VerticalAlignment="Top" Width="75" Click="btnStop_Click"/>
+        <Label Content="LECTOR TARJETA" HorizontalAlignment="Left" Margin="40,26,0,0" VerticalAlignment="Top"/>
+        <Label Name="lblMensajeLector" Content="mensaje: " HorizontalAlignment="Left" Margin="79,97,0,0" VerticalAlignment="Top"/>
+        <Label Content="REGISTRO" HorizontalAlignment="Left" Margin="40,149,0,0" VerticalAlignment="Top"/>
+        <Label Content="Codigo:" HorizontalAlignment="Left" Margin="46,66,0,0" VerticalAlignment="Top"/>
+        <Label Content="Gramos:" HorizontalAlignment="Left" Margin="49,185,0,0" VerticalAlignment="Top"/>
+        <Label Name="lblMensajeRegistro" Content="mensaje: " HorizontalAlignment="Left" Margin="79,216,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblCodigo" Content="Codigo:" HorizontalAlignment="Left" Margin="187,26,0,0" VerticalAlignment="Top"/>
+    </Grid>
+</Window>

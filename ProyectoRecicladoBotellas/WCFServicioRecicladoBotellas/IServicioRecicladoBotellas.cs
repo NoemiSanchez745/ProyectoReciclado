@@ -12,16 +12,18 @@ namespace WCFServicioRecicladoBotellas
     [ServiceContract]
     public interface IServicioRecicladoBotellas
     {
-        [OperationContract]
-        void DoWork();
-
         #region Contenedor
-        List<Contenedor> SelectContenedor(int UsuarioID);
+        [OperationContract]
+        List<Contenedor> SelectContenedor(string codigo);
+        [OperationContract]
+        int InsertContenedor(double gramos, DateTime fecha, TimeSpan hora, string codigo);
         #endregion
 
         #region Usuario
-        Usuario SelectUsuario(int UsuarioID);
-        int GetUserID(string codigo);
+        [OperationContract]
+        Usuario SelectUsuario(string codigo);
+        [OperationContract]
+        string GetUserMessage(string codigo);
         #endregion
 
     }

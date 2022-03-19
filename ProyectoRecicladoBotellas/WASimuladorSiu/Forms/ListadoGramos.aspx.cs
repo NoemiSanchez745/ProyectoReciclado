@@ -4,39 +4,39 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using WCFServicioRecicladoBotellas;
-using WCFServicioRecicladoBotellas.Entidades;
+//using WASimuladorSiu.WCFRecicladoBotellas;
+using WASimuladorSiu.ServicioRecicladoBotellas;
 
 namespace WASimuladorSiu.Forms
 {
     public partial class ListadoGramos : System.Web.UI.Page
     {
-        int userID;
+        string message, codigo;
         protected void Page_Load(object sender, EventArgs e)
         {
-            ServicioRecicladoBotellas servicioRecicladoBotellas = new ServicioRecicladoBotellas();
+            ServicioRecicladoBotellasClient client = new ServicioRecicladoBotellasClient();
             double totalGramos = 0;
 
             if (!this.IsPostBack)
             {
-                userID = int.Parse(Session["UsuarioID"].ToString());
-                if (userID > 0)
+                codigo = Session["codigo"].ToString().Trim();
+                message = Session["message"].ToString();
+                if (message == "OK")
                 {
-                    Usuario usuario = servicioRecicladoBotellas.SelectUsuario(userID);
+                    var usuario = client.SelectUsuario(codigo);
                     lbNombre.Text = usuario.Nombres + " " + usuario.Apellidos;
                     lbCodigo.Text = usuario.Codigo;
 
                     gvListaGramos.DataSource = null;
-                    gvListaGramos.DataSource = servicioRecicladoBotellas.SelectContenedor(userID).OrderByDescending(c => c.ContenedorID);
+                    gvListaGramos.DataSource = client.SelectContenedor(codigo);
                     gvListaGramos.DataBind();
                     gvListaGramos.HeaderRow.TableSection = TableRowSection.TableHeader;
 
-                    gvListaGramos.Columns[0].Visible = false;
-                    gvListaGramos.Columns[4].Visible = false;
+                    gvListaGramos.Columns[3].Visible = false;
 
                     foreach (GridViewRow item in gvListaGramos.Rows)
                     {
-                        totalGramos = totalGramos + double.Parse(item.Cells[1].Text);
+                        totalGramos = totalGramos + double.Parse(item.Cells[0].Text);
                     }
 
                     lbGramos.Text = totalGramos + " gramos";

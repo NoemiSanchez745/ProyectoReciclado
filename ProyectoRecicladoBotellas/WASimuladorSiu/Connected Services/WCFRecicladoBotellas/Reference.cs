@@ -20,6 +20,30 @@ namespace WASimuladorSiu.WCFRecicladoBotellas {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServicioRecicladoBotellas/DoWork", ReplyAction="http://tempuri.org/IServicioRecicladoBotellas/DoWorkResponse")]
         System.Threading.Tasks.Task DoWorkAsync();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServicioRecicladoBotellas/SelectContenedor", ReplyAction="http://tempuri.org/IServicioRecicladoBotellas/SelectContenedorResponse")]
+        WCFServicioRecicladoBotellas.Entidades.Contenedor[] SelectContenedor(string codigo);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServicioRecicladoBotellas/SelectContenedor", ReplyAction="http://tempuri.org/IServicioRecicladoBotellas/SelectContenedorResponse")]
+        System.Threading.Tasks.Task<WCFServicioRecicladoBotellas.Entidades.Contenedor[]> SelectContenedorAsync(string codigo);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServicioRecicladoBotellas/InsertContenedor", ReplyAction="http://tempuri.org/IServicioRecicladoBotellas/InsertContenedorResponse")]
+        int InsertContenedor(double gramos, System.DateTime fecha, System.TimeSpan hora, string codigo);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServicioRecicladoBotellas/InsertContenedor", ReplyAction="http://tempuri.org/IServicioRecicladoBotellas/InsertContenedorResponse")]
+        System.Threading.Tasks.Task<int> InsertContenedorAsync(double gramos, System.DateTime fecha, System.TimeSpan hora, string codigo);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServicioRecicladoBotellas/SelectUsuario", ReplyAction="http://tempuri.org/IServicioRecicladoBotellas/SelectUsuarioResponse")]
+        WCFServicioRecicladoBotellas.Entidades.Usuario SelectUsuario(string codigo);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServicioRecicladoBotellas/SelectUsuario", ReplyAction="http://tempuri.org/IServicioRecicladoBotellas/SelectUsuarioResponse")]
+        System.Threading.Tasks.Task<WCFServicioRecicladoBotellas.Entidades.Usuario> SelectUsuarioAsync(string codigo);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServicioRecicladoBotellas/GetUserMessage", ReplyAction="http://tempuri.org/IServicioRecicladoBotellas/GetUserMessageResponse")]
+        string GetUserMessage(string codigo);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServicioRecicladoBotellas/GetUserMessage", ReplyAction="http://tempuri.org/IServicioRecicladoBotellas/GetUserMessageResponse")]
+        System.Threading.Tasks.Task<string> GetUserMessageAsync(string codigo);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -55,6 +79,38 @@ namespace WASimuladorSiu.WCFRecicladoBotellas {
         
         public System.Threading.Tasks.Task DoWorkAsync() {
             return base.Channel.DoWorkAsync();
+        }
+        
+        public WCFServicioRecicladoBotellas.Entidades.Contenedor[] SelectContenedor(string codigo) {
+            return base.Channel.SelectContenedor(codigo);
+        }
+        
+        public System.Threading.Tasks.Task<WCFServicioRecicladoBotellas.Entidades.Contenedor[]> SelectContenedorAsync(string codigo) {
+            return base.Channel.SelectContenedorAsync(codigo);
+        }
+        
+        public int InsertContenedor(double gramos, System.DateTime fecha, System.TimeSpan hora, string codigo) {
+            return base.Channel.InsertContenedor(gramos, fecha, hora, codigo);
+        }
+        
+        public System.Threading.Tasks.Task<int> InsertContenedorAsync(double gramos, System.DateTime fecha, System.TimeSpan hora, string codigo) {
+            return base.Channel.InsertContenedorAsync(gramos, fecha, hora, codigo);
+        }
+        
+        public WCFServicioRecicladoBotellas.Entidades.Usuario SelectUsuario(string codigo) {
+            return base.Channel.SelectUsuario(codigo);
+        }
+        
+        public System.Threading.Tasks.Task<WCFServicioRecicladoBotellas.Entidades.Usuario> SelectUsuarioAsync(string codigo) {
+            return base.Channel.SelectUsuarioAsync(codigo);
+        }
+        
+        public string GetUserMessage(string codigo) {
+            return base.Channel.GetUserMessage(codigo);
+        }
+        
+        public System.Threading.Tasks.Task<string> GetUserMessageAsync(string codigo) {
+            return base.Channel.GetUserMessageAsync(codigo);
         }
     }
 }

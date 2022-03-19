@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="512d6b6b-09f4-46d9-ae12-bd7eca17027d" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:62922/ServicioRecicladoBotellas.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ServicioRecicladoBotellas1.xsd" MetadataType="Schema" ID="8bc05ee9-b8bf-43e5-bd62-1e3e925dfdfb" SourceId="1" SourceUrl="http://localhost:62922/ServicioRecicladoBotellas.svc?xsd=xsd2" />
+    <MetadataFile FileName="ServicioRecicladoBotellas.xsd" MetadataType="Schema" ID="d446d5a8-865d-4f81-8e20-942c803f23d1" SourceId="1" SourceUrl="http://localhost:62922/ServicioRecicladoBotellas.svc?xsd=xsd0" />
+    <MetadataFile FileName="ServicioRecicladoBotellas.disco" MetadataType="Disco" ID="fdcfee12-6559-4506-aaa2-f7c54db42ca2" SourceId="1" SourceUrl="http://localhost:62922/ServicioRecicladoBotellas.svc?disco" />
+    <MetadataFile FileName="ServicioRecicladoBotellas.wsdl" MetadataType="Wsdl" ID="f25d6aed-700d-46d2-8c7d-8742e03e1920" SourceId="1" SourceUrl="http://localhost:62922/ServicioRecicladoBotellas.svc?wsdl" />
+    <MetadataFile FileName="ServicioRecicladoBotellas11.xsd" MetadataType="Schema" ID="ff09fc18-587f-45f8-a4d9-28b30773b0cb" SourceId="1" SourceUrl="http://localhost:62922/ServicioRecicladoBotellas.svc?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
